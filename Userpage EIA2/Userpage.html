@@ -1,0 +1,90 @@
+<!--
+Aufgabe: (EIA2 userpage)
+Name: (Sofia Gschwend)
+Matrikel: (257664)
+Datum: (24.03.2018)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert.
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>Sofia Gschwend - userpage</title>
+
+	<link rel="stylesheet" type="text/css" href="css/Userpage.css">
+	<script src="js/Portfolio.js"></script>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	<header id="top">
+		<div class="imgBack"></div>
+		<div class="title" id="SofiaGschwend"></div>
+		<nav>
+			<ul id="mySidenav" class="sidenav">
+				<li class="hover1"><a href="#mich">ÜBER MICH</a></li>
+				<li class="hover1"><a href="#eia2">EIA 2</a></li>
+			</ul>
+		</nav>
+		<div id="burger"></div>
+	</header>
+	<!--Erscheint nur bei ts click-->
+	<div class="mobileNav">
+		<ul id="mySidenav" class="sidenav">
+			<li class="hover1"><a href="#mich">ÜBER MICH</a></li>
+			<li class="hover1"><a href="#eia2">EIA 2</a></li>
+		</ul>
+	</div>
+
+	<main id="content">
+		<!-- document.getElementById("content") Dynamische Inhaltserzeugung in HTMl über ts -->
+
+		<div class="box">
+			<img class="portrait" src="img/PortraitSofia.jpg" />
+			<div class="about" id="mich">
+				<h2>ÜBER MICH</h2>
+				<br>Hi, ich bin Sofia.
+				<br>Ich studiere in Furtwangen Medienkonzeption.
+				<br>Schau dich um hier gibt es die ersten Ergebnisse zu sehen!
+			</div>
+		</div>
+		<div class="imgBack" id="img1"></div>
+
+		<div class="box">
+			<div class="podcast" id="eia2">
+				<h2>ENTWICKLUNG INTERAKTIVER ANWENDUNGEN 2</h2>
+				<div class="abstand">
+					<br>Die Grundlagen von Typescript werden im Fach Entwicklung Interaktiver Anwendung vermittelt.
+					<br>Hier geht es zu meinem Github Repository.
+				</div>
+				<div>
+					<a class="hover1 links" href="https://github.com/sofiagschwend">Github Repository</a><br />
+
+					<a class="hover1 links" href="https://github.com/sofiagschwend">Aufgabe 0</a>
+
+				</div>
+			</div>
+		</div>
+		<div class="imgBack" id="img4"></div>
+
+	</main>
+
+	<footer>
+		<strong>Impressum</strong>
+		<p>Sofia Gschwend</p>
+		<p>Am Großhausberg</p>
+		<p>78120 Furtwangen im Schwarzwald</p>
+		<p> <img src="img/HFULogoweiss.png" /></p>
+		<a href="#top"><img id="ButtonTop" src="img/ButtonUpweiss.png" /></a>
+		<p>nach oben </p>
+	</footer>
+
+</body>
+
+</html>

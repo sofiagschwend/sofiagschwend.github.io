@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: 'Open Sans', sans-serif;
+                color: white;
+            }
+
+            header {
+            	width: 100%;
+            	height: auto;
+            	float: left;
+            	background-image: url(../img/HGTitle.jpg);
+            	background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            main {
+            	width: 100%;
+            	height: auto;
+            	float: left;
+            }
+
+            .box {
+                width: 100%;
+                height: auto;
+                float: left;
+                background-color: gray;
+                padding: 20px 50px 20px 50px;
+                box-sizing: border-box;
+            }
+
+            .imgBack {
+                width: 100%;
+                height: 40vh;
+                float: left;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+
+           .title {
+            	width: 30%;
+                height: 40vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-bottom: 1em;
+                margin: 0 35% 0 35%;
+                z-index: 10;
+           	}
+
+
+
+            #imgtitle {
+           		background-image: url(../img/HGTitle.jpg);
+            }
+
+            #SofiaGschwend {
+            	background-image: url(../img/SofiaGschwendtitle.png);
+            }
+
+            #img1 {
+                background-image: url(../imgback/Art.JPG);
+            }
+
+            #img4 {
+                background-image: url(../imgback/Kuppel.JPG);
+            }
+
+
+
+
+            nav {
+                height: 50px;
+                width: 100%;
+                background-color: #767777;
+                float: left;
+                display: block;
+                position: relative;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            ul {
+                height: 100%;
+                width: 100%;
+                float: left;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            nav ul li {
+            	height: 100%;
+            	width: 16.666%;
+                display: block;
+            	line-height: 50px;
+            	text-align: center;
+            	list-style: none;
+            	transition: 400ms;
+                text-decoration: none;
+            }
+
+            .hover1:hover {
+				background-color: rgba(255, 255, 255, 0.2);
+				cursor: pointer;
+			}
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:visited {
+                color: white;
+            }
+
+            a:active {
+                color: darkgray;
+            }
+
+            .links {
+                background-color: #27408B;
+                padding: 12px 28px;
+                width: 50%;
+                text-align: center;
+                display: block;
+            }
+
+            .abstand {
+                margin-bottom: 12px;
+            }
+
+            .mobileNav {
+                position: fixed;
+                top 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(118, 119, 119, 0.6);
+                opacity: 0;
+                z-index: -1;
+            }
+
+            .mobileNav ul {
+                width: 100%;
+                margin: 100px 0 0 0;
+                padding:0;
+                float: left;
+                list-style-type: none;
+                overflow: hidden;
+            }
+
+            .mobileNav ul li {
+                width: 100%;
+                text-align: center;
+                line-height: 50px;
+                float: left;
+            }
+
+            .mobileNav.open { /*open ist class auf die via ts zugegriffen wird*/
+                opacity: 1;
+                z-index: 11;
+            }
+
+			.foto {
+				width: 33.3%;
+				height: auto;
+				float: left;
+			}
+
+            .foto img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                float: left;
+            }
+
+			.portrait {
+				width: auto;
+				height: 40vh;
+				float: left;
+				padding-left: 1em;
+			}
+
+			.about {
+				float:left;
+				margin-left: 20px;
+			}
+
+
+
+            .podcast {
+            	width: 50%;
+                height: auto;
+                float: left;
+            }
+
+            .podcast img {
+                width: 80%;
+                float: left;
+            }
+
+            .bilderrechts {
+                width: 50%;
+                float: left;
+                padding: 30px 0 30px 30px;
+                box-sizing: border-box;
+            }
+
+            .bilderrechts img {
+                width: 100%;
+                height: auto;
+                float: left;
+            }
+
+			footer {
+				width: 100%;
+                height: auto;	/*viewport height */
+                float: left;
+                box-sizing: border-box;
+                position: relative;
+                bottom: 0px;
+                padding: 1em;
+                background-color: gray;
+                font-family: 'Open Sans', sans-serif;
+                line-height: 1em;
+				text-align: center;
+			}
+#ButtonTop    {
+     width: 5%;
+}
+/***************************************************************************
+************REPSONSIVE**WEBDESIGN*******************************************/
+@media screen and (min-width: 0px){
+
+    .title {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #burger {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 50px;
+        left: 50px;
+        background-color: #148b9e;
+        z-index: 12;
+    }
+
+    .box {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .portrait {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .about {
+        float: none;
+    }
+
+    .podcast {
+        width: 100%;
+    }
+
+    .bilderrechts {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 570px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .title {
+        width: 30%;
+        margin: 0 35% 0 35%;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        height: 50px;
+    }
+
+    nav ul li {
+        width: 16.666%;
+        float: left;
+    }
+
+
+    .box {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .portrait {
+        width: auto;
+		height: 40vh;
+		float: left;
+		padding-left: 1em;
+    }
+
+    .about {
+        float: left;
+    }
+
+    .podcast {
+        width: 50%;
+    }
+
+    .bilderrechts {
+        width: 50%;
+        float: left;
+        padding: 30px 0 30px 30px;
+        box-sizing: border-box;
+    }
+
+
+}
+
+@media screen and (min-width: 1700px) {
+
+}
